@@ -1,0 +1,8 @@
+﻿################################################################################
+# Bu .gitignore dosyası Microsoft(R) Visual Studio tarafından otomatik olarak oluşturulmuştur.
+################################################################################
+
+/.vs/UrunYonetimSistemi/v17
+/.vs/UrunYonetimSistemi/v17/.suo
+/.vs/UrunYonetimSistemi/v17/DocumentLayout.backup.json
+/.vs/UrunYonetimSistemi/FileContentIndex
