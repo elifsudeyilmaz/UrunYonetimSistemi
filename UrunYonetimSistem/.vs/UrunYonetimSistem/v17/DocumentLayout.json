@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\UrunYonetimSistem.csproj|c:\\users\\s\u0131la\\desktop\\denemeurunyonetim\\denemeurunyonetim\\denemeurunyonetim\\productnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\UrunYonetimSistem.csproj|solutionrelative:denemeurunyonetim\\productnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\denemeurunyonetim\\productnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|solutionrelative:denemeurunyonetim\\productnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\UrunYonetimSistem.csproj|c:\\users\\s\u0131la\\desktop\\denemeurunyonetim\\denemeurunyonetim\\denemeurunyonetim\\productlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\UrunYonetimSistem.csproj|solutionrelative:denemeurunyonetim\\productlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\denemeurunyonetim\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|solutionrelative:denemeurunyonetim\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\denemeurunyonetim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|solutionrelative:denemeurunyonetim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\denemeurunyonetim\\iproductmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5806892-4248-4B48-8884-ABBE84056841}|DenemeUrunYonetim\\DenemeUrunYonetim.csproj|solutionrelative:denemeurunyonetim\\iproductmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductNode.cs",
+              "DocumentMoniker": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\ProductNode.cs",
+              "RelativeDocumentMoniker": "DenemeUrunYonetim\\ProductNode.cs",
+              "ToolTip": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\ProductNode.cs",
+              "RelativeToolTip": "DenemeUrunYonetim\\ProductNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T13:51:50.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductLinkedList.cs",
+              "DocumentMoniker": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\ProductLinkedList.cs",
+              "RelativeDocumentMoniker": "DenemeUrunYonetim\\ProductLinkedList.cs",
+              "ToolTip": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\ProductLinkedList.cs",
+              "RelativeToolTip": "DenemeUrunYonetim\\ProductLinkedList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:49:15.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductManager.cs",
+              "DocumentMoniker": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\IProductManager.cs",
+              "RelativeDocumentMoniker": "DenemeUrunYonetim\\IProductManager.cs",
+              "ToolTip": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\IProductManager.cs",
+              "RelativeToolTip": "DenemeUrunYonetim\\IProductManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:50:40.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\Program.cs",
+              "RelativeDocumentMoniker": "DenemeUrunYonetim\\Program.cs",
+              "ToolTip": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\Program.cs",
+              "RelativeToolTip": "DenemeUrunYonetim\\Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:45:26.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\Product.cs",
+              "RelativeDocumentMoniker": "DenemeUrunYonetim\\Product.cs",
+              "ToolTip": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\Product.cs",
+              "RelativeToolTip": "DenemeUrunYonetim\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:48:40.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductNode.cs",
+              "DocumentMoniker": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\ProductNode.cs",
+              "RelativeDocumentMoniker": "DenemeUrunYonetim\\ProductNode.cs",
+              "ToolTip": "C:\\Users\\S\u0131la\\Desktop\\DenemeUrunYonetim\\DenemeUrunYonetim\\DenemeUrunYonetim\\ProductNode.cs",
+              "RelativeToolTip": "DenemeUrunYonetim\\ProductNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:49:00.006Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
