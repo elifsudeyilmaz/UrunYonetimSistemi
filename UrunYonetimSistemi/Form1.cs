@@ -11,13 +11,15 @@ using System.Windows.Forms;
 using AVLTreeInventory;
 using System.Collections;
 using System.Xml.Linq;
+using static UrunEnvanterApp.Program;
+using System.Diagnostics;
 
 namespace UrunEnvanterApp
 {
     public partial class Form1 : Form
     {
         //AVL ağacı ile Sıralı olarak sıralama ve isim ile arama
-        AVLTree avlTree = new AVLTree(); 
+      
         
 
         public Form1()
@@ -35,7 +37,7 @@ namespace UrunEnvanterApp
             string productName = txtAra.Text.Trim();
             if (!string.IsNullOrEmpty(productName))
             {
-                var result = avlTree.SearchByName(productName);
+                var result = GlobalData.avlTree.SearchByName(productName);
                 if (result != null)
                 {
                     dataGridView1.Rows.Clear();
@@ -55,7 +57,7 @@ namespace UrunEnvanterApp
 
         private void brnListeleAvl_Click(object sender, EventArgs e)
         {
-            var products = avlTree.InOrderToList();
+            var products = GlobalData.avlTree.InOrderToList();
 
             dataGridView1.Rows.Clear();
 
@@ -72,11 +74,47 @@ namespace UrunEnvanterApp
             dataGridView1.Columns.Add("ID", "ID");
             dataGridView1.Columns.Add("Name", "Ürün Adı");
             dataGridView1.Columns.Add("Price", "Fiyat");
+        }
 
-            avlTree.Insert(new Product { ID = 1001, Name = "Laptop", Price = 5000, Stock = 20, Category = "Elektronik" });
-            avlTree.Insert(new Product { ID = 1002, Name = "Telefon", Price = 3000, Stock = 30, Category = "Elektronik" });
-            avlTree.Insert(new Product { ID = 1003, Name = "Bardak", Price = 15, Stock = 100, Category = "Ev Eşyası" });
-            avlTree.Insert(new Product { ID = 1004, Name = "Çikolata", Price = 25, Stock = 50, Category = "Gıda" });
+        private string seciliUrunAdi = "";
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex >= 0 && dataGridView1.Rows[e.RowIndex].Cells["Name"].Value != null)
+            {
+                seciliUrunAdi = dataGridView1.Rows[e.RowIndex].Cells["Name"].Value.ToString();
+            }
+        }
+
+        private void btnFiyatGuncelle_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(seciliUrunAdi))
+            {
+                MessageBox.Show("Lütfen önce bir ürün seçin.");
+                return;
+            }
+
+            if (double.TryParse(txtYeniFiyat.Text, out double yeniFiyat))
+            {
+                bool sonuc = GlobalData.avlTree.UpdatePriceByName(seciliUrunAdi, yeniFiyat);
+                if (sonuc)
+                {
+                    MessageBox.Show("Fiyat başarıyla güncellendi.");
+                    // Güncellenmiş ürünü yeniden göster
+                    var updated = GlobalData.avlTree.SearchByName(seciliUrunAdi);
+                    dataGridView1.Rows.Clear();
+                    dataGridView1.Rows.Add(updated.ID, updated.Name, updated.Price);
+                }
+                else
+                {
+                    MessageBox.Show("Ürün bulunamadı.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen geçerli bir fiyat girin.");
+            }
         }
     }
 }

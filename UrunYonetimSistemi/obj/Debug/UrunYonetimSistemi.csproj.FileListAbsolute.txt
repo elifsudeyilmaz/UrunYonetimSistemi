@@ -20,3 +20,5 @@ C:\Users\elifs\source\repos\UrunYonetimSistemi\UrunYonetimSistemi\obj\Debug\Urun
 C:\Users\elifs\source\repos\UrunYonetimSistemi\UrunYonetimSistemi\obj\Debug\UrunYonetimSistemi.csproj.CoreCompileInputs.cache
 C:\Users\elifs\source\repos\UrunYonetimSistemi\UrunYonetimSistemi\obj\Debug\UrunEnvanterApp.exe
 C:\Users\elifs\source\repos\UrunYonetimSistemi\UrunYonetimSistemi\obj\Debug\UrunEnvanterApp.pdb
+C:\Users\elifs\source\repos\UrunYonetimSistemi\UrunYonetimSistemi\obj\Debug\UrunEnvanterApp.HızlıEkleme.resources
+C:\Users\elifs\source\repos\UrunYonetimSistemi\UrunYonetimSistemi\obj\Debug\UrunEnvanterApp.Stok.resources

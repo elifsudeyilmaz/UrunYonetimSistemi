@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +79,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(147, 339);
+            this.button3.Location = new System.Drawing.Point(231, 340);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(80, 66);
             this.button3.TabIndex = 3;
@@ -109,11 +111,32 @@
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(128, 421);
+            this.label4.Location = new System.Drawing.Point(216, 419);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 28);
             this.label4.TabIndex = 6;
             this.label4.Text = "İlişkili Ürünler";
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Location = new System.Drawing.Point(46, 340);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 66);
+            this.button4.TabIndex = 7;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(61, 409);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 28);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Stok";
             // 
             // AnaFormcs
             // 
@@ -122,6 +145,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(855, 493);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -131,6 +156,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AnaFormcs";
             this.Text = "AnaFormcs";
+            this.Load += new System.EventHandler(this.AnaFormcs_Load);
             this.ResumeLayout(false);
 
         }
@@ -144,5 +170,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label5;
     }
 }
