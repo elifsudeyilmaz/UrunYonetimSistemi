@@ -6,6 +6,7 @@ Bu proje, ürünlerin envanterini yönetmek için kullanılan bir uygulamadır. 
 - [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
 - [Kurulum](#kurulum)
 - [Kullanım](#kullanım)
+- [Görsel Arayüz](#görsel-arayüz)
 - [Veri Yapıları](#veri-yapıları)
 - [Performans Testleri](#performans-testleri)
 - [Katkı](#katkı)
@@ -19,6 +20,8 @@ Bu proje, envanter yönetim sistemini optimize etmek amacıyla 3 farklı veri ya
 - **Bağlı Liste**: Ürünleri eklenme sırasına veya stok miktarına göre sıralayarak yönetir.
 
 Bu yapılar birlikte çalışarak, her birinin avantajlarından yararlanır ve ürünlerin envanteri üzerinde verimli bir şekilde işlemler yapar.
+
+Proje, kullanıcı dostu bir **Windows Forms** arayüzü ile birlikte gelmektedir. Arayüz, ürün ekleme, arama, güncelleme ve silme gibi işlemleri kolayca yapmanıza olanak tanır. Ayrıca, ürünler sıralanabilir, fiyatları güncellenebilir ve stok miktarları yönetilebilir.
 
 ## Kullanılan Teknolojiler
 - **C# (.NET Framework)**
@@ -52,6 +55,12 @@ Bu yapılar birlikte çalışarak, her birinin avantajlarından yararlanır ve �
 3. **Bağlı Liste ile Stok Bazlı Yönetim**
    - Ürünler, stok miktarına göre sıralanarak eklenebilir.
    - Stok güncellemeleri yapılabilir.
+
+## Görsel Arayüz
+Proje, kullanıcı dostu bir görsel arayüz sunar. Windows Forms kullanılarak geliştirilen bu arayüzde:
+- Ürün ekleme, arama, güncelleme ve silme işlemleri için butonlar bulunur.
+- Arama sonuçları ve ürün listelemeleri **DataGridView** aracılığıyla görsel olarak gösterilir.
+- Kullanıcılar, ürünler üzerinde işlem yaparken görsel geri bildirimler alır ve uygulama üzerinden işlemlerini rahatça gerçekleştirebilirler.
 
 ## Veri Yapıları
 ### 1. AVL Ağacı
