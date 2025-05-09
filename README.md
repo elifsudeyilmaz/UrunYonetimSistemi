@@ -1,4 +1,4 @@
-# Hızlı Ürün Arama ve Envanter Yönetimi
+# Hızlı Ürün Arama ve Envanter Yönetim Sistemi
 Bu proje, ürünlerin envanterini yönetmek için kullanılan bir uygulamadır. Proje, AVL Ağaçları, Hash Tabloları ve Bağlı Listeler gibi veri yapıları kullanarak ürünlerin hızlıca eklenmesi, silinmesi, güncellenmesi ve sıralanması işlemlerini gerçekleştirmektedir.
 
 ## İçindekiler
