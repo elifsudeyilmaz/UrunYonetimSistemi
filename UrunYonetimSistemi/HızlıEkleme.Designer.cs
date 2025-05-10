@@ -53,6 +53,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnGeriAl = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -305,6 +306,17 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnGeriAl
+            // 
+            this.btnGeriAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGeriAl.Location = new System.Drawing.Point(654, 176);
+            this.btnGeriAl.Name = "btnGeriAl";
+            this.btnGeriAl.Size = new System.Drawing.Size(136, 57);
+            this.btnGeriAl.TabIndex = 24;
+            this.btnGeriAl.Text = "SİLME İŞLEMİNİ GERİ AL";
+            this.btnGeriAl.UseVisualStyleBackColor = true;
+            this.btnGeriAl.Click += new System.EventHandler(this.btnGeriAl_Click);
+            // 
             // HızlıEkleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -312,6 +324,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 630);
+            this.Controls.Add(this.btnGeriAl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
@@ -371,5 +384,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGeriAl;
     }
 }

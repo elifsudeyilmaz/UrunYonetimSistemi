@@ -79,10 +79,10 @@ namespace UrunEnvanterApp
                 // DataGridView'i temizliyoruz
                 dataGridView1.Rows.Clear();
 
-               
+             
                 List<Product> allProducts = GlobalData.productTable.GetAllProducts();
 
-                
+
                 foreach (var product in allProducts)
                 {
                     dataGridView1.Rows.Add(product.ID, product.Name, product.Price, product.Stock, product.Category);
@@ -125,7 +125,8 @@ namespace UrunEnvanterApp
                 MessageBox.Show("Hata: " + ex.Message);
             }
         }
-        
+
+        private Product deletedProduct;  // Silinen ürünü saklayacak global değişken
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -134,24 +135,32 @@ namespace UrunEnvanterApp
                 // Kullanıcıdan silinecek ürünün ID'sini al
                 int urunID = Convert.ToInt32(txtDelete.Text);
 
+                deletedProduct = GlobalData.productTable.Search(urunID);
+
+
                 // HashTable'dan sil
                 bool isDeletedFromHash = GlobalData.productTable.Delete(urunID);
 
                 // AVL Tree'den sil
-                bool isDeletedFromAVL = GlobalData.avlTree.Delete(urunID);
+                bool isDeletedFromAVL = GlobalData.avlTree.Delete(deletedProduct);
 
                 // LinkedList'ten sil
                 bool isDeletedFromList = GlobalData.linkedList.Delete(urunID);
 
+               
                 // Silme işlemi başarılıysa
                 if (isDeletedFromHash && isDeletedFromAVL && isDeletedFromList)
                 {
+                    
+                    GlobalData.productTable.PushToDeletedStack(deletedProduct);
+
                     MessageBox.Show("Ürün başarıyla silindi!");
                 }
                 else
                 {
                     MessageBox.Show("Silme işlemi başarısız. Ürün ID'sini kontrol edin.");
                 }
+
                 txtDelete.Clear();
             }
             catch (Exception ex)
@@ -174,6 +183,27 @@ namespace UrunEnvanterApp
         private void button1_Click(object sender, EventArgs e)
         {
             GlobalData.productTable.PerformDeleteTest(1000, 10000);
+        }
+
+        private void btnGeriAl_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Product geriAlinan = GlobalData.productTable.UndoDelete();
+
+                if (geriAlinan != null)
+                {
+                    MessageBox.Show($"Ürün geri alındı: {geriAlinan.ID} - {geriAlinan.Name}");
+                }
+                else
+                {
+                    MessageBox.Show("Geri alınacak ürün yok.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
         }
     }
         

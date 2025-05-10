@@ -8,11 +8,13 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using AVLTreeInventory;
 using DenemeUrunYonetim;
+using static UrunEnvanterApp.Program;
 
 namespace WindowsFormsApp1
 {
     internal class HashTable
     {
+        private Stack<Product> deletedStack = new Stack<Product>();
         private HashNode[] buckets;
         private int size;
 
@@ -105,6 +107,32 @@ namespace WindowsFormsApp1
                 }
             }
             return list;
+        }
+        public Product UndoDelete()
+        {
+            if (deletedStack.Count > 0)
+            {
+                Product lastDeletedProduct = deletedStack.Pop();
+
+                GlobalData.productTable.Add(lastDeletedProduct);
+                GlobalData.avlTree.Insert(lastDeletedProduct);
+                GlobalData.linkedList.AddProduct(lastDeletedProduct);
+
+                return lastDeletedProduct;
+            }
+            return null;
+        }
+        public Product DeletedStackPop()
+        {
+            if (deletedStack.Count > 0)
+            {
+                return deletedStack.Pop();
+            }
+            return null;
+        }
+        public void PushToDeletedStack(Product product)
+        {
+            deletedStack.Push(product); // Silinen ürünü yığına ekler
         }
         public void PerformBigDataTest(HashTable productTable, int itemCount)
         {

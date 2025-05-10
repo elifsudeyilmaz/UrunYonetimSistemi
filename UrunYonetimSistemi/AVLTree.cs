@@ -128,67 +128,54 @@ namespace AVLTreeInventory
             list.Add(node.Product);
             InOrder(node.Right, list);
         }
-        public bool Delete(int id)
+
+        public bool Delete(Product product)
         {
-            var result = DeleteRecursive(root, id);
-            if (result != null)
-            {
-                root = result;
-                return true; // Silme başarılı
-            }
-            return false; // Silme başarısız
+            if (product == null) return false;
+            root = DeleteByPrice(root, product.Price, product.ID);
+            return true;
         }
 
-        private TreeNode DeleteRecursive(TreeNode node, int id)
+        private TreeNode DeleteByPrice(TreeNode node, double price, int id)
         {
             if (node == null) return null;
 
-            // Sol ağaçta veya sağ ağaçta id'yi ara
-            if (id < node.Product.ID)
-                node.Left = DeleteRecursive(node.Left, id);
-            else if (id > node.Product.ID)
-                node.Right = DeleteRecursive(node.Right, id);
+            if (price < node.Product.Price)
+                node.Left = DeleteByPrice(node.Left, price, id);
+            else if (price > node.Product.Price)
+                node.Right = DeleteByPrice(node.Right, price, id);
             else
             {
-                // 1 veya 0 çocuğu varsa
+                // Aynı fiyatta birden fazla ürün olabilir, ID de kontrol et
+                if (node.Product.ID != id)
+                {
+                    // ID uyuşmuyorsa çocuklara bak
+                    node.Left = DeleteByPrice(node.Left, price, id);
+                    node.Right = DeleteByPrice(node.Right, price, id);
+                    return node;
+                }
+
+                // Silinecek düğüm bulundu
                 if (node.Left == null || node.Right == null)
-                {
-                    TreeNode temp = node.Left ?? node.Right; // Tek çocuk varsa
-                    if (temp == null) // Çocuksuz ise
-                    {
-                        node = null;
-                    }
-                    else
-                    {
-                        node = temp; // Çocuğu kaldır
-                    }
-                }
-                else
-                {
-                    // İki çocuğu varsa, sağ alt ağacın en küçük elemanını al
-                    TreeNode temp = MinValueNode(node.Right);
-                    node.Product = temp.Product;
-                    node.Right = DeleteRecursive(node.Right, temp.Product.ID);
-                }
+                    return node.Left ?? node.Right;
+
+                TreeNode temp = MinValueNode(node.Right);
+                node.Product = temp.Product;
+                node.Right = DeleteByPrice(node.Right, temp.Product.Price, temp.Product.ID);
             }
 
-            if (node == null) return null;
-
-            node.Height = 1 + Math.Max(Height(node.Left), Height(node.Right)); // Yükseklik güncelle
-            int balance = GetBalance(node); // Dengeyi kontrol et
+            node.Height = 1 + Math.Max(Height(node.Left), Height(node.Right));
+            int balance = GetBalance(node);
 
             if (balance > 1 && GetBalance(node.Left) >= 0)
                 return RotateRight(node);
-
             if (balance < -1 && GetBalance(node.Right) <= 0)
                 return RotateLeft(node);
-
             if (balance > 1 && GetBalance(node.Left) < 0)
             {
                 node.Left = RotateLeft(node.Left);
                 return RotateRight(node);
             }
-
             if (balance < -1 && GetBalance(node.Right) > 0)
             {
                 node.Right = RotateRight(node.Right);
@@ -197,6 +184,7 @@ namespace AVLTreeInventory
 
             return node;
         }
+
 
         private TreeNode MinValueNode(TreeNode node)
         {

@@ -72,6 +72,7 @@
     <Compile Include="ProductNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack.cs" />
     <Compile Include="Stok.cs">
       <SubType>Form</SubType>
     </Compile>
