@@ -51,7 +51,7 @@
             // 
             // txtNewStock
             // 
-            this.txtNewStock.Location = new System.Drawing.Point(76, 52);
+            this.txtNewStock.Location = new System.Drawing.Point(114, 51);
             this.txtNewStock.Name = "txtNewStock";
             this.txtNewStock.Size = new System.Drawing.Size(100, 22);
             this.txtNewStock.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(40, 52);
+            this.label1.Location = new System.Drawing.Point(312, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 23);
             this.label1.TabIndex = 2;
@@ -97,7 +97,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(249, 52);
+            this.label2.Location = new System.Drawing.Point(12, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 22);
             this.label2.TabIndex = 6;
