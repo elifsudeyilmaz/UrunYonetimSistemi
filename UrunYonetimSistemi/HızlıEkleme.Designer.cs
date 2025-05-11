@@ -309,9 +309,9 @@
             // btnGeriAl
             // 
             this.btnGeriAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGeriAl.Location = new System.Drawing.Point(654, 176);
+            this.btnGeriAl.Location = new System.Drawing.Point(626, 175);
             this.btnGeriAl.Name = "btnGeriAl";
-            this.btnGeriAl.Size = new System.Drawing.Size(136, 57);
+            this.btnGeriAl.Size = new System.Drawing.Size(164, 69);
             this.btnGeriAl.TabIndex = 24;
             this.btnGeriAl.Text = "SİLME İŞLEMİNİ GERİ AL";
             this.btnGeriAl.UseVisualStyleBackColor = true;
