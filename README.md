@@ -1,5 +1,5 @@
 # Hızlı Ürün Arama ve Envanter Yönetim Sistemi
-Bu proje, ürünlerin envanterini yönetmek için kullanılan bir uygulamadır. Proje, AVL Ağaçları, Hash Tabloları ve Bağlı Listeler gibi veri yapıları kullanarak ürünlerin hızlıca eklenmesi, silinmesi, güncellenmesi ve sıralanması işlemlerini gerçekleştirmektedir.
+Bu proje, ürünlerin envanterini yönetmek için kullanılan bir uygulamadır. Proje, AVL Ağaçları, Hash Tabloları, Bağlı Listeler ve Stack gibi veri yapıları kullanarak ürünlerin hızlıca eklenmesi, silinmesi, güncellenmesi ve sıralanması işlemlerini gerçekleştirmektedir.
 
 ## İçindekiler
 - [Proje Hakkında](#proje-hakkında)
@@ -18,6 +18,7 @@ Bu proje, envanter yönetim sistemini optimize etmek amacıyla 3 farklı veri ya
 - **AVL Ağacı**: Ürünleri sıralı bir şekilde tutar ve hızlı sıralama ve arama işlemleri sağlar.
 - **Hash Tablosu**: Ürünlere ID'ye göre hızlı erişim sağlar.
 - **Bağlı Liste**: Ürünleri eklenme sırasına veya stok miktarına göre sıralayarak yönetir.
+- **Stack**: Son yapılan işlemleri geri almayı sağlar (Undo özelliği).
 
 Bu yapılar birlikte çalışarak, her birinin avantajlarından yararlanır ve ürünlerin envanteri üzerinde verimli bir şekilde işlemler yapar.
 
@@ -55,6 +56,11 @@ Proje, kullanıcı dostu bir **Windows Forms** arayüzü ile birlikte gelmektedi
 3. **Bağlı Liste ile Stok Bazlı Yönetim**
    - Ürünler, stok miktarına göre sıralanarak eklenebilir.
    - Stok güncellemeleri yapılabilir.
+    
+4. **Stack ile Geri Alma (Undo)**
+   - Yapılan işlemler (ekleme, silme, güncelleme) bir yığına kaydedilir.
+   - "Geri Al" butonu ile son işlem geri alınabilir.
+   - Bu sayede yanlış yapılan işlemler kolayca iptal edilebilir.
 
 ## Görsel Arayüz
 Proje, kullanıcı dostu bir görsel arayüz sunar. Windows Forms kullanılarak geliştirilen bu arayüzde:
@@ -77,6 +83,10 @@ Proje, kullanıcı dostu bir görsel arayüz sunar. Windows Forms kullanılarak 
 - Ürünler, eklenme sırasına veya stok miktarına göre sıralı bir şekilde tutulur.
 - Listeye ürün eklemek ve silmek O(n) karmaşıklıkla yapılır.
 - Stok güncelleme ve sıralama işlemleri yapılabilir.
+
+### 4. Stack (Yığın)
+- İşlem geçmişi tutma
+- O(1) geri alma işlemi
 
 ## Performans Testleri
 Proje, farklı veri yapılarının büyük veri setleri üzerinde nasıl performans gösterdiğini test etmek için bazı performans testleri içerir.
