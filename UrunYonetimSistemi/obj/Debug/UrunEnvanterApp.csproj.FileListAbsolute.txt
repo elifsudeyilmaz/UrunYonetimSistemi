@@ -1,0 +1,11 @@
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\bin\Debug\UrunEnvanterApp.exe.config
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\bin\Debug\UrunEnvanterApp.exe
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\bin\Debug\UrunEnvanterApp.pdb
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.csproj.AssemblyReference.cache
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.Form1.resources
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.Properties.Resources.resources
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.csproj.GenerateResource.cache
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.csproj.CoreCompileInputs.cache
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.exe
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.pdb
+C:\Users\elifs\source\repos\UrunEnvanterApp\UrunEnvanterApp\obj\Debug\UrunEnvanterApp.AnaFormcs.resources
